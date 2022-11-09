@@ -8,9 +8,9 @@ export default function Admin() {
 
     return (
         <div>
-            {location.pathname === '/admin' ? <div>
+            {location.pathname === '/admin' || location.pathname === '/admin/' ? <div>
 
-                Admin home
+                <h1 className='py-5 text-center text-danger'>Admin Panel</h1>
 
             </div> : <Outlet />}
         </div>

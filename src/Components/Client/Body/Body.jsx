@@ -1,6 +1,8 @@
 import React from 'react'
 import { Outlet } from 'react-router'
 import { useLocation } from 'react-router'
+import Login from './Authentication/Login'
+
 
 export default function Body() {
 
@@ -11,6 +13,7 @@ export default function Body() {
       {location.pathname === '/' ? <div>
 
         Body home
+        
 
       </div> : <Outlet />}
     </div>

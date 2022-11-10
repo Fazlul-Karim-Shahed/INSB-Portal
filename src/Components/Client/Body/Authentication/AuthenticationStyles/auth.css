@@ -1,0 +1,116 @@
+* {
+  --box-Width: 300px;
+  --box-height: 50px;
+  --box-Border-Radius: 25px;
+  --box-padding-left: 20px;
+
+  --icon-height: 30px;
+  --icon-width: 30px;
+  --icon-border-radius: 50%;
+  --icon-padding: 3px;
+}
+body {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.loginForm {
+  /* position: relative; */
+  margin-top: 80px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+}
+
+.InputBox {
+  width: var(--box-Width);
+  height: var(--box-height);
+
+  margin-top: 10px;
+
+  border-radius: var(--box-Border-Radius);
+  padding-left: var(--box-padding-left);
+
+  font-size: 18px;
+
+
+  transition: 0.2s linear;
+}
+
+.InputBox:hover{
+    border-color: blue;
+}
+
+input:focus {
+  transform: translateX(-2px);
+  border-radius: 10px;
+}
+
+.EmailIcon {
+  height: var(--icon-height);
+  width: var(--icon-width);
+  border-radius: var(--icon-border-radius);
+  padding: var(--icon-padding);
+}
+
+.PassIcon {
+  height: var(--icon-height);
+  width: var(--icon-width);
+  border-radius: var(--icon-border-radius);
+  padding: var(--icon-padding);
+}
+
+.eye {
+  /* background: red; */
+
+  position: absolute;
+  z-index: 300;
+  height: var(--icon-height);
+  width: var(--icon-width);
+  border-radius: var(--icon-border-radius);
+  margin-left: -35px;
+  margin-top: 20px;
+
+  padding: var(--icon-padding);
+
+  float: right;
+  cursor: pointer;
+}
+
+.LoginButton {
+  width: 170px;
+  height: 30px;
+
+  margin-top: 20px;
+  margin-left: 4rem;
+
+  border-radius: 13px;
+
+  padding: 0 20px;
+
+  outline: none;
+  border: none;
+
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s linear;
+
+  letter-spacing: 0.07em;
+}
+
+button:hover {
+  animation: ani9 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes ani9 {
+  0% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
